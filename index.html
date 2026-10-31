@@ -1,198 +1,483 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Şarkı Arşivi</title>
+<title>Boran Sahin Special</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background: #080808;
-    color: white;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
-    padding: 40px 20px;
+    background: #111;
+    color: white;
+    margin: 20px;
 }
 
-header {
+h1 {
     text-align: center;
-    margin-bottom: 40px;
 }
 
-header h1 {
-    font-size: 32px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+h2 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
 }
 
-header p {
-    color: #888;
-}
-
-.container {
-    max-width: 600px;
-    margin: auto;
-}
-
-.song {
-    background: #151515;
-    border: 1px solid #292929;
-    border-radius: 15px;
-    padding: 22px;
-    margin-bottom: 18px;
-    transition: 0.3s;
-}
-
-.song:hover {
-    border-color: #666;
-    transform: translateY(-3px);
-}
-
-.song h2 {
-    font-size: 20px;
-    margin-bottom: 17px;
-}
-
-.upload {
-    display: inline-block;
-    background: white;
-    color: black;
-    padding: 11px 18px;
+.sarki {
+    background: #222;
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.upload:hover {
-    background: #bbb;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.filename {
-    color: #999;
-    font-size: 13px;
-    margin-top: 12px;
-    word-break: break-word;
+.sarki p {
+    font-size: 18px;
+    margin-top: 0;
 }
 
 audio {
-    display: none;
     width: 100%;
-    margin-top: 17px;
-    height: 42px;
+    margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    color: #555;
-    margin-top: 40px;
-    font-size: 12px;
+.indir {
+    display: inline-block;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.indir:hover {
+    background: #0088cc;
+}
+
+img {
+    max-width: 150px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>🎵 ŞARKI ARŞİVİ</h1>
-    <p>En sevdiğin şarkıları yükle ve dinle</p>
-</header>
+<h1>Boran Sahin Special</h1>
 
-<div class="container">
+<hr>
 
-    <div class="song">
-        <h2>01. Felek</h2>
-        <label class="upload" for="song1">🎵 Şarkı Yükle</label>
-        <input type="file" id="song1" accept="audio/*">
-        <div class="filename" id="name1">Henüz şarkı yüklenmedi</div>
-        <audio id="player1" controls></audio>
-    </div>
+<h2>Borarms Spotify Premium 2</h2>
 
-    <div class="song">
-        <h2>02. Yanımda sen olmayınca</h2>
-        <label class="upload" for="song2">🎵 Şarkı Yükle</label>
-        <input type="file" id="song2" accept="audio/*">
-        <div class="filename" id="name2">Henüz şarkı yüklenmedi</div>
-        <audio id="player2" controls></audio>
-    </div>
 
-    <div class="song">
-        <h2>03. Ah gardaş</h2>
-        <label class="upload" for="song3">🎵 Şarkı Yükle</label>
-        <input type="file" id="song3" accept="audio/*">
-        <div class="filename" id="name3">Henüz şarkı yüklenmedi</div>
-        <audio id="player3" controls></audio>
-    </div>
+<div class="video">
 
-    <div class="song">
-        <h2>04. Diyardan Diyara</h2>
-        <label class="upload" for="song4">🎵 Şarkı Yükle</label>
-        <input type="file" id="song4" accept="audio/*">
-        <div class="filename" id="name4">Henüz şarkı yüklenmedi</div>
-        <audio id="player4" controls></audio>
-    </div>
+<p>wettpolly</p>
 
-    <div class="song">
-        <h2>05. Isırgan otu</h2>
-        <label class="upload" for="song5">🎵 Şarkı Yükle</label>
-        <input type="file" id="song5" accept="audio/*">
-        <div class="filename" id="name5">Henüz şarkı yüklenmedi</div>
-        <audio id="player5" controls></audio>
-    </div>
+<audio controls preload="none">
+    <source src="Video Proje5.3gp" type="video/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Video Proje5.3gp"
+download>
+⬇️ Şarkıyı İndir
+</a>
 
 </div>
 
-<footer>
-    © 2026 Şarkı Arşivi
-</footer>
 
-<script>
-for (let i = 1; i <= 5; i++) {
+<div class="sarki">
 
-    const input = document.getElementById("song" + i);
-    const player = document.getElementById("player" + i);
-    const name = document.getElementById("name" + i);
+<p>Kıvırcık Ali - Ah Gardaş</p>
 
-    let currentUrl = null;
+<audio controls preload="none">
+    <source src="Kıvırcık Ali - Ah Gardaş.mp3" type="audio/mpeg">
+</audio>
 
-    input.addEventListener("change", function() {
+<br>
 
-        const file = this.files[0];
+<a class="indir"
+href="Kıvırcık Ali - Ah Gardaş.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
 
-        if (!file) return;
+</div>
 
-        if (!file.type.startsWith("audio/")) {
-            alert("Lütfen bir ses dosyası seç!");
-            this.value = "";
-            return;
-        }
 
-        if (currentUrl) {
-            URL.revokeObjectURL(currentUrl);
-        }
+<div class="sarki">
 
-        currentUrl = URL.createObjectURL(file);
+<p>Kıvırcık Ali - Diyardan Diyara</p>
 
-        player.src = currentUrl;
-        player.style.display = "block";
+<audio controls preload="none">
+    <source src="Kıvırcık Ali - Diyardan Diyara.mp3" type="audio/mpeg">
+</audio>
 
-        name.textContent = "Yüklendi: " + file.name;
+<br>
 
-    });
-}
-</script>
+<a class="indir"
+href="Kıvırcık Ali - Diyardan Diyara.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
 
-</body>
-</html>
+</div>
+
+
+<div class="sarki">
+
+<p>Kıvırcık Ali - Felek</p>
+
+<audio controls preload="none">
+    <source src="Kıvırcık Ali - Felek.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Kıvırcık Ali - Felek.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+<div class="sarki">
+
+<p>Kıvırcık Ali - Isırgan Otu</p>
+
+<audio controls preload="none">
+    <source src="Kıvırcık Ali - Isırgan Otu.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Kıvırcık Ali - Isırgan Otu.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Yanımda Sen Olmayınca</p>
+
+<audio controls preload="none">
+    <source src="Yanımda Sen Olmayınca.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Yanımda Sen Olmayınca.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>ileri marşı</p>
+
+<audio controls preload="none">
+    <source src="ileri marşı.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="ileri marşı.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>tankcı marşı</p>
+
+<audio controls preload="none">
+    <source src="tankcı marşı.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="tankcı marşı.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Yol (Akustik) - Zeynep Bastık</p>
+
+<audio controls preload="none">
+    <source src="Yol (Akustik) - Zeynep Bastık.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Yol (Akustik) - Zeynep Bastık.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Simge - Yankı</p>
+
+<audio controls preload="none">
+    <source src="Simge - Yankı.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Simge - Yankı.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+
+</div>
+
+
+<div class="sarki">
+
+<p>Kenan Doğulu - Doktor</p>
+
+<audio controls preload="none">
+    <source src="Kenan Doğulu - Doktor.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Kenan Doğulu - Doktor.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+<div class="sarki">
+
+<p>Serdar Ortaç - Şeytan</p>
+
+<audio controls preload="none">
+    <source src="Serdar Ortaç - Şeytan.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Serdar Ortaç - Şeytan.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Gkhan-Krdar-Dayan-Kalbim-Alatrka</p>
+
+<audio controls preload="none">
+    <source src="Gkhan-Krdar-Dayan-Kalbim-Alatrka.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Gkhan-Krdar-Dayan-Kalbim-Alatrka.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+<div class="sarki">
+
+<p>Gökhan Kırdar Dayan Kalbim (Alatürka) 2008 (Official Lyric Audio) #GökhanKırdar #DayanKalbim_compressed.mp3</p>
+
+<audio controls preload="none">
+    <source src="Gökhan Kırdar Dayan Kalbim (Alatürka) 2008 (Official Lyric Audio) #GökhanKırdar #DayanKalbim_compressed.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Gökhan Kırdar Dayan Kalbim (Alatürka) 2008 (Official Lyric Audio) #GökhanKırdar #DayanKalbim_compressed.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+<div class="sarki">
+
+<p><p>Seni-Terkedeceim</p></p>
+
+<audio controls preload="none">
+    <source src="Seni-Terkedeceim.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Seni-Terkedeceim.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="sarki">
+
+<p>Ta-Uzak-Yollardan</p>
+
+<audio controls preload="none">
+    <source src="Ta-Uzak-Yollardan.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Ta-Uzak-Yollardan.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Alla-Beni-Pulla-Beni</p>
+
+<audio controls preload="none">
+    <source src="Alla-Beni-Pulla-Beni.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Alla-Beni-Pulla-Beni.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Kurtlar-Vadisi-Halil-brahim-Trks</p>
+
+<audio controls preload="none">
+    <source src="Kurtlar-Vadisi-Halil-brahim-Trks.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Kurtlar-Vadisi-Halil-brahim-Trks.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+<div class="sarki">
+
+<p>ferdi özbeğen seviyorum delicesine fairuz mix</p>
+
+<audio controls preload="none">
+    <source src="seviyorum delicesine ferdi özbeğen x.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="seviyorum delicesine ferdi özbeğen x.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+<div class="sarki">
+
+<p>Sila-Yabanci</p>
+
+<audio controls preload="none">
+    <source src="Sila-Yabanci.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Sila-Yabanci.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+
+<div class="sarki">
+
+<p>Sezen-Aksu-Bir-Zamanlar-Deli-Gnl</p>
+
+<audio controls preload="none">
+    <source src="Sezen-Aksu-Bir-Zamanlar-Deli-Gnl.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Sezen-Aksu-Bir-Zamanlar-Deli-Gnl.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+<div class="sarki">
+
+<p>Sezen-Aksu-Sar-Odalar-Official-V</p>
+
+<audio controls preload="none">
+    <source src="Sezen-Aksu-Sar-Odalar-Official-V.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<a class="indir"
+href="Sezen-Aksu-Sar-Odalar-Official-V.mp3"
+download>
+⬇️ Şarkıyı İndir
+</a>
+
+</div>
+
+    
+    
+<hr>
+
+<h2>Özel İçerik</h2>
+
+<img src="gizli.jpg">
